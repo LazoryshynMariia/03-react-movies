@@ -40,6 +40,7 @@ export default function App() {
 
     const closeModal = () => {
         setIsModalOpen(false);
+        setSelectedMovie(null);
     }
 
     

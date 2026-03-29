@@ -3,10 +3,8 @@ import axios from "axios";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3/";
 axios.defaults.headers.common["Authorization"] = `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`;
-axios.defaults.headers.common["accept"] = "aplication/json";
-axios.defaults.params = {
-  language: "en-US",
-};
+axios.defaults.headers.common["accept"] = "application/json";
+
 
 interface MoviesResponse {
     results: Movie[];
